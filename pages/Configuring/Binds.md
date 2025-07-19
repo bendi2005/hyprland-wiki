@@ -201,7 +201,7 @@ bindrl = MOD, KEY, exec, amongus
 Flags:
 
 ```plain
-l -> locked, will also work when an input inhibitor (e.g. a lockscreen) is active.
+l -> locked, will also work when an input inhibitor (e.g. a lockscreen) is active. 
 r -> release, will trigger on release of a key.
 c -> click, will trigger on release of a key or button as long as the mouse cursor stays inside binds:drag_threshold.
 g -> drag, will trigger on release of a key or button as long as the mouse cursor moves outside binds:drag_threshold.
@@ -215,6 +215,12 @@ s -> separate, will arbitrarily combine keys between each mod/key, see [Keysym c
 d -> has description, will allow you to write a description for your bind.
 p -> bypasses the app's requests to inhibit keybinds.
 ```
+{{< callout type=info >}}
+
+By default, bindings get triggered on pressing of a key (as opposed to releasing). Some programs with the exec dispatcher are exceptions to this, to force trigger on press, use the l flag.
+A popular example is tofi.
+
+{{< /callout >}}
 
 Example Usage:
 
